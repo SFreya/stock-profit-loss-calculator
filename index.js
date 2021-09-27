@@ -25,7 +25,7 @@ function calculateProfitAndLoss(sellingPrice, costPrice, stocks) {
   } else if (sellingPrice > costPrice) {
     var profit = ((sellingPrice - costPrice) * stocks).toFixed(2);
     var profitPercent = ((profit / costPrice) * 100).toFixed(2);
-    output.style.color = 'green';
+    output.style.color = 'black';
     output.innerText = `The profit is ${profit} and percentage is ${profitPercent}%`;
   } else {
     var loss = ((costPrice - sellingPrice) * stocks).toFixed(2);
